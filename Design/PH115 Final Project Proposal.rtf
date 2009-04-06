@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf430
+{\fonttbl\f0\fnil\fcharset0 HoeflerText-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10020\viewh12280\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\qc\pardirnatural
+
+\f0\fs26 \cf0 PH115 Final Project Proposal\
+Revision 1 \'97 2009-04-05\
+by Kevin Reid\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+I propose this: A game with the structure of a shoot-em-up and the mechanics of a physics game.\
+\
+Overall, the game will consist of a series of levels in which the player must destroy all enemies to continue to the next level. There will be scoring based on the time taken and efficiency per level.\
+\
+Implementation: Each level shall be a single frame; a hold-frame behavior operates until the level is completed, at which point normal Director animation is used for transition to the next level.\
+\
+
+\b Basic mechanics:\
+
+\b0 \
+The player and enemy characters may freely move about the stage, and behave essentially the same except for control. Each character is composed of multiple individual components, which are joined as if by springs. If the components are forced too far apart by impacts, they are disconnected and the character is damaged or destroyed. Destruction may also result from particular weak points being contacted at all.\
+\
+All components will be circles in behavior, though perhaps more complex in graphical appearance.\
+\
+Implementation: Reuse the logic from the previous colliding-circles lab project, with improvements to properly handle objects of different masses. (I have written a prototype of this in another language.) Each component is an individual sprite; they are manually placed in their initial positions.\
+\
+
+\b Player:\
+
+\b0 \
+The player's control consists of moving the mouse to direct their character to the location of the cursor.\
+\
+The player's primary weapon consists of a massive object which is attracted to the player's location: with appropriate movement, the weapon will orbit the player, and can be arranged so as to smash into enemies, destroying their bonds. There may also be additional temporary or permanent weapons gained from powerups, depending on the available time and playtesting results.\
+\
+
+\b Enemies:\
+
+\b0 \
+Enemies' difficulty will vary by their mass, number of components, attacks, and possibly behavior.\
+\
+The basic attacks will be ramming and bullets (which are physical objects and can be deflected/stopped). I might try including a weapon such as the player has, but I would expect it to possibly be a bit difficult to implement computer control of it.\
+\
+}

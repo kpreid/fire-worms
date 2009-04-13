@@ -1,0 +1,24 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf410
+{\fonttbl\f0\fnil\fcharset77 HoeflerText-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww15620\viewh12680\viewkind1\viewscale100
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\qc\pardirnatural
+
+\f0\fs36 \cf0 PH115 Final Project - Kevin Reid\
+Progress Report \'d1 2009-04-13\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs26 \cf0 \
+I have started with the colliding-balls exercise from Director Lab 7 and made the following changes:\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'a5	}In collisions, the balls bounce off as if they have mass proportional to their area, rather than equal mass.\
+{\listtext	\'a5	}Fixed a bug causing balls to collide with their rectangular bounds rather than exact circular radius.\
+{\listtext	\'a5	}The balls have floating-point positions, so that they can move with velocity less than 1 pixel/frame.\
+{\listtext	\'a5	}There are two special balls: the player character (small ball closely following the mouse) and the weapon (larger ball weakly attracted to the mouse, so that it orbits). The character and weapon balls do not bounce off each other. If the character ball touches anything else, it is "dead" and the movie ends.\
+{\listtext	\'a5	}The objects' initial velocities are 0 and their initial positions are as manually laid out on the stage, rather than random; this will facilitate level design.\
+{\listtext	\'a5	}Objects do not bounce off the edges of the stage, but may move beyond them. In particular, the player's weapon often orbits partly off the stage, and enemies may be knocked away. (I have not decided whether this will be fatal.)\
+{\listtext	\'a5	}A "glue" behavior allows creating physical attachments between balls. They behave as damped springs, and may be broken by excessive force. (I plan for breakage to cause the \'d2death\'d3 of the enemies or player character, but this is not yet implemented.)\
+{\listtext	\'a5	}I have created two simple enemies consisting of  rings of glued balls, with "heads" which chase the player. (They cannot be defeated, though they can have parts smashed off.)}

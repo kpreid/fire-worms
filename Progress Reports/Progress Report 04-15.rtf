@@ -1,0 +1,24 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf410
+{\fonttbl\f0\fnil\fcharset77 HoeflerText-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww15620\viewh12680\viewkind1\viewscale100
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\qc\pardirnatural
+
+\f0\fs36 \cf0 PH115 Final Project - Kevin Reid\
+Progress Report \'d1 2009-04-15\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs26 \cf0 \
+Changes made today (version "2.0")\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'a5	}Added a facility to the "glue" behavior to notify another sprite's behaviors (typically the "head" sprite of a character) of its breakage.\
+{\listtext	\'a5	}The "ram" behavior listens for such notifications and stops operating (becomes \'d2dead\'d3).\
+{\listtext	\'a5	}Drew images for the player and the player's weapon (an asteroid). I am going to proceed with an outer-space theme unless I get a better idea.\
+{\listtext	\'a5	}Added an enemies-remaining counter displayed on the screen, which is maintained by a movie script, which has handlers which are invoked by enemies when they appear and when they die.\
+{\listtext	\'a5	}The hold-frame behavior now stops holding when the enemy count goes to zero.\
+{\listtext	\'a5	}After the held frame, the movie continues to a "You Win!" message and stops.\
+{\listtext	\'a5	}There is a frame before the held frame where the level is displayed and the game waits for the player to click before starting.\
+{\listtext	\'a5	}If the player collides with something, instead of the movie stopping, it goes back to the beginning.\
+}

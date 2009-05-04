@@ -1,0 +1,1 @@
+global gLevelRunningproperty spriteNumproperty pLifetimeon beginSprite me  pLifetime = 5 * _movie.frameTempoendon exitFrame me  pLifetime = pLifetime - 1  -- die if we're old or if the level's over  if pLifetime <= 0 or not gLevelRunning then    s = sprite(me.spriteNum)    s.scriptInstanceList = []    s.puppet = FALSE  end ifend

@@ -1,0 +1,1 @@
+global gPlayTimeon mouseUp me  go to "Level 1"  gPlayTime = 0end

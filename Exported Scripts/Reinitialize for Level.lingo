@@ -1,0 +1,1 @@
+global gMaxBallSprite -- highest sprite channel number which has a ball behavior. Assigned here and in Ball Behaviorglobal gLevelRunningglobal gLevelWaitingon prepareFrame me  -- note this must run before the enemies' beginSprites  --setNumEnemies 0  --gMaxBallSprite = 0  deleteBullets  gLevelRunning = FALSE  gLevelWaiting = FALSEend

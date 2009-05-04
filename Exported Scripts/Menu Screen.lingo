@@ -1,0 +1,1 @@
+global gLevelRunning -- is the level currently in simulation?global gPlayer -- the player behavioron prepareFrame me  --put "prepareFrame menu"  gLevelRunning = TRUE  gLevelWaiting = FALSEendon exitFrame me  --put "exitFrame menu"  if not gPlayer.pAlive then    go to frame 1  else    go to the frame    end ifend

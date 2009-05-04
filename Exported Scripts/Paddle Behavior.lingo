@@ -1,0 +1,1 @@
+on exitFrame me  sprite(me.spriteNum).locV = (the mouseLoc).locVend

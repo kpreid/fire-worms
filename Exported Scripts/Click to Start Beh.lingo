@@ -1,0 +1,1 @@
+global gLevelWaiting -- provided for us by Run Levelon beginSprite me  sprite(me.spriteNum).visible = FALSEendon prepareFrame me  sprite(me.spriteNum).visible = gLevelWaiting and ((the timer) mod 60 < 30)endon endSprite me  sprite(me.spriteNum).visible = TRUE  end
